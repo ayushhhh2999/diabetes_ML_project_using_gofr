@@ -72,13 +72,23 @@ Response Example:
 ```
 How It Works
 Client sends a POST request with patient data.
+
 Go server parses the request and calls the Python script (predict.py) with the data as command-line arguments.
+
 Python script loads the model and scaler, processes the input, and prints the prediction.
+
 Go server captures the output and returns it as a JSON response.
+
+
 Notes
+
 Ensure model.pkl and scaler.pkl are present in the project directory.
+
 The Go server expects Python to be available at .\\venv\\Scripts\\python.exe (Windows). Adjust the path if needed.
+
 For deployment, consider using Docker for consistent environments.
 
+
 Author
-Your Ayush
+
+Ayush
