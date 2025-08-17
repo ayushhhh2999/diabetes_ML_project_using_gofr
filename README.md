@@ -69,6 +69,7 @@ Response Example:
 {
   "prediction": "The prediction result is: Positive"
 }
+```
 How It Works
 Client sends a POST request with patient data.
 Go server parses the request and calls the Python script (predict.py) with the data as command-line arguments.
